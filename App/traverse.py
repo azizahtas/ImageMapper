@@ -25,7 +25,6 @@ class Traverse:
             if len(class_id) <= 0:
                 helper.insertclassid(c1)
                 class_id = helper.getclassid(c1)
-
             path2 = os.path.join(path, c1)
             l2_list = os.listdir(path2)
 
@@ -88,7 +87,7 @@ class Traverse:
                 print(matches)
                 if len(matches['data']) <= 0:
                     helper.upsertNmatchData(predict_img_path, image_path)
-                break;
+            
             break;
                 #prediction['recognised_images'].append(image_path)
             #prediction_data.append(prediction)
